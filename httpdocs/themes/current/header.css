@@ -1,0 +1,126 @@
+header .luna-nav.nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+header .navbar > .container-fluid .navbar-brand{
+    margin: 0;
+}
+header .navbar-brand > img{
+    padding: 0;
+}
+.container-fluid > .navbar-header{
+    margin-right: 15px;
+}
+header .navbar-default{
+    background: transparent;
+}
+header .navbar{
+    min-height: inherit;
+    width: 100%;
+}
+
+header .luna-nav.nav li.active a:before{
+    display: none;
+}
+header .luna-nav.nav li.profil-link a{
+    padding: 5px 10px;
+}
+header .luna-nav.nav li.active a{
+    background: #0E2D41;
+    border-radius: 6px;
+    color: #fff;
+}
+header .nav > li{
+    padding: 0px 3px;
+}
+header .nav > li > a > div .main-menu-text svg{
+    margin-right: 10px;
+}
+header .nav > li > a > div .main-menu-text > span{
+    margin: 0;
+    height: inherit;
+}
+header .luna-nav.nav li > a{
+    font-weight: 500;
+    padding: 10px 20px;
+}
+header .header-second-row{
+    flex-grow: 1;
+}
+header {
+    background: #1A4159;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+header > nav > .container-fluid{
+    height: 65px;
+}
+header .luna-nav.nav li a:hover, header .luna-nav.nav li a:focus{
+    color: #fff;
+    background: #0E2D41;
+    border-radius: 8px;
+}
+header .luna-nav.nav li a:hover::before, header .luna-nav.nav li a:focus::before, header .luna-nav.nav li.active a::before{
+    display: none;
+}
+header .luna-nav.nav li.profil-link > a:hover, header .luna-nav.nav li.profil-link > a:focus{
+    color:#fff;
+    background: transparent;
+}
+header .luna-nav.nav li ul li a:hover, header .luna-nav.nav li ul li a:focus{
+    color: #fff;
+    background: #0E2D41;
+    border-radius: 0;
+}
+header .profil-link ul li a.active{
+    background: #0E2D41;
+}
+header .nav > li.profil-link .dropdown-menu{
+    right: 0;
+    left: unset;
+}
+header .navbar-form{
+    margin-top: -6px;
+}
+header .nav > li.profil-link > a > div .main-menu-text svg{
+    display: table;
+}
+#search-form-popup .navbar-form button:hover{
+    background: transparent;
+    padding: 0px;
+}
+#search-form-popup .navbar-form .form-control{
+    padding-left: 20px;
+    padding-right: 40px;
+}
+#search-form-popup .navbar-form button{
+    box-shadow: none;
+    color: #1A4159;
+    right: 15px!important;
+    left: unset;
+    position: absolute;
+    top: 7px;
+    border: 0px;
+    padding: 0px;
+}
+#search-form-popup .navbar-form .form-control{
+    background: #fff;
+}
+#search-form-popup .navbar-form{
+    float: left!important;
+    width: 73%;
+}
+#search-form-popup{
+    position: absolute;
+    display: none;
+    top:0;
+    left: -300px;
+}
+#search-popup-button{
+    color: #fff;
+    position: relative;
+}

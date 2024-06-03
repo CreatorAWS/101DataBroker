@@ -1,0 +1,5 @@
+.idea
+files/
+*dbsettings*
+*testmodule.*
+*.DS_Store

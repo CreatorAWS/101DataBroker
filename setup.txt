@@ -1,0 +1,88 @@
+1. Server setup
+Required:
+- Apache (with mod_rewrite)
+- PHP 5.4+ (with gd2, curl extensions)
+- MySQL 5+
+
+Also, database and user should be created. The file dump.sql should be imported to the database.
+
+2. Script setup
+
+2.0. Domain and app name setup
+
+You should edit sm_settings table in imported database
+resource_url - domain name (without www and http://, https:// - i.e. app.somewebsitename.com/)
+
+2.1. Script database setup
+
+Copy folders files/ and includes/ from resources/ to your server (httpdocs/includes/ and httpdocs/files/)
+
+Set 777 permissions for files/ and the files it contains
+
+2.2 This file contains database settings:
+includes/dbsettings.php
+
+You should update the values of these variables:
+$nameDB - MySQL database name
+$userNameDB - MySQL user name
+$userPasswordDB - MySQL user password
+
+2.3. Setup cron tasks (LINUXUSER - user name for cron tasks, FULL_PATH to website directory)
+
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=cron --d=minute
+1 * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=cron --d=hour > /dev/null 2>&1
+0 0 * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=cron --d=day > /dev/null 2>&1
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=mailqueue > /dev/null 2>&1
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=cronphoneverifier > /dev/null 2>&1
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=campaignqueue > /dev/null 2>&1
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=croncampaignvoice > /dev/null 2>&1
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=cronimportcustomers > /dev/null 2>&1#
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=emailgrabber > /dev/null 2>&1
+* * * * * LINUXUSER /usr/bin/php /FULL_PATH/httpdocs/cli.php --m=emailparser > /dev/null 2>&1
+
+3. Twilio setup for every number (number for each company)
+
+Navigate to Dashboard->Phone Numbers->Active Numbers
+Open number and open Configure tab.
+Find Messaging section and place the URL to a webhook for Message Comes In (HTTP POST): value http://app.DOMAIN/index.php?m=receivesms
+
+4.MailJet Setup
+
+Navigate to My account->Senders & Domains->Add a Sender Domain or Address->Add Domain
+Set your root domain name(i.e any@somewebsitename.com)
+
+5. Setup website 
+
+Login to installed website 
+
+default access
+u:admin
+p:111
+
+5.1 Update settings 
+
+http://app.DOMAIN/index.php?m=admin&d=settings
+
+Resource title - website title
+Copyright text
+Administrator's e-mail
+
+5.2 Set Default Twilio and MailJet Settings (System Settings)
+
+https://app.DOMAIN/index.php?m=globalsettings
+
+5.3 Default company settings
+
+Go to Admin->Companies-> Edit company with #1 ID
+Set Twilio Phone
+Email
+Send system notifications to cellphone(optional)
+
+
+5.4 Super Admin access info
+
+http://app.DOMAIN/index.php?m=account -> Edit personal data
+Old Password - 111
+
+
+

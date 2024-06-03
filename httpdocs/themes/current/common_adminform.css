@@ -1,0 +1,150 @@
+.adminform-separator td{
+    font-size: 16px!important;
+    color: #161724!important;
+}
+.adminform-separator
+{
+    padding: 0px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 24px;
+    color: #161724;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.adminform_table td textarea{
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.adminform-filed-end-txt{
+    margin: 3px 10px;
+}
+.adminform_table td input[type="password"],
+.adminform_table td input[type="text"]
+{
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.adminform_table td:first-child{
+    color: #171725;
+    font-size: 14px;
+}
+.adminform_table td textarea
+{
+
+}
+
+.adminform_table td input[type=checkbox]
+{
+	width:auto;
+}
+
+.admintable_row td img {max-width:280px;}
+
+.adminform_savebutton input{
+    background: #1A4159;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+    border: 0px solid;
+    font-weight: normal;
+}
+.adminform_savebutton
+{
+	text-align:right;
+	padding: 6px 14px;
+}
+
+
+.adminform-row-odd
+{
+	background-color:#efefef;
+}
+
+.adminform-row-pair
+{
+	background-color:#fafafa;
+}
+
+tr.adminform-row-odd:hover td, tr.adminform-row-pair:hover td
+{
+	background-color:#d9edf7;
+}
+
+.adminform_savebutton_helper
+{
+	font-style:italic;
+	padding-right:2em;
+	font-size:smaller;
+}
+tr.form-group{
+    display: table;
+    width: 100%;
+}
+.adminform_form tr.adminform-separator td:first-child{
+    margin-bottom: 0;
+}
+.adminform_form tr td:first-child{
+    margin-bottom: 10px;
+}
+.adminform_form tr td{
+    width: 100%;
+}
+.adminform_form tr{
+    display: flex;
+    flex-direction: column;
+}
+.adminform_form{
+    background-color: #ffffff;
+    box-shadow: none;
+    color: #000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    padding: 10px 15px 15px 15px;
+}
+
+.adminform-filed-btm-txt {
+	font-size:10px;
+	font-style:italic;
+}
+.field-caption-color{
+    color: #161724;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-label-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6B7280;
+}
+.form-control::placeholder{
+    color: #161724;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.has-items > .item{
+    font-size: 13px;
+    color: #000 !important;
+    background: #F3ECFD !important;
+    padding: 5px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-weight: 500;
+    display: inline-block;
+}
+.has-items:focus{
+    box-shadow: none;
+}
+.selectize-input:focus{
+    box-shadow: none !important;
+}
+

@@ -1,0 +1,177 @@
+/*
+.admintable_header{
+	background-color : #ababab;
+	font-size : 13px;
+	color: #000000;
+	font-weight : bold;
+}
+
+.admintable_row{
+	background-color : #dbdbdb;
+	font-size : 13px;
+	color: #000000;
+}
+
+.admintable
+{
+	border: 1px solid #959595;
+}
+
+.admintable td
+{
+	border: 1px solid #959595;
+	border-collaps:collapse;
+}
+
+.admintable_header td
+{
+	padding:4px;
+}
+
+.admintable_row td
+{
+	padding:3px;
+}
+
+.admintable_row td a:hover
+{
+	text-decoration:underline;
+	color: #FD7313;
+}
+
+.admintable_row td a
+{
+	text-decoration:underline;
+	color: #000000;
+}
+
+.at-row-odd
+{
+	background-color:#efefef;
+}
+
+.at-row-pair
+{
+	background-color:#fafafa;
+}
+
+tr.admintable_row:hover td
+{
+	background-color:#d9edf7;
+}
+*/
+
+.at-row-pair
+{
+
+}
+.at-row-odd
+{
+
+}
+.admintable_header td{/*
+    background-color : #4596f1!important;
+    color:#fff!important;
+    border-top:0px solid!important;
+    border-bottom: 2px solid #dddddd;
+*/}
+
+.atdropdownitems
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	min-width:100px;
+}
+
+.atdropdownitems a
+{
+	min-width:100px;
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background: #fff;
+	color: #000000!important;
+	font: 11px arial;
+}
+
+.atdropdownitems a:hover
+{	background: #f0f0f0;
+	color: #FFF
+}
+
+.at-highlight-error
+{
+	background: #f2dede;
+	color:#ac2925;
+}
+
+.at-highlight-error:hover, .at-highlight-error:hover td
+{
+	background: #eed3d7!important;
+	color:#ac2925;
+}
+
+.at-highlight-attention
+{
+	background: #ffba51;
+}
+
+.at-highlight-attention:hover, .at-highlight-attention:hover td
+{
+	background:#f0ad4e!important;
+}
+
+.at-highlight-warning
+{
+	background: #fcf8e3;
+	color:#c09853;
+}
+
+.at-highlight-warning:hover, .at-highlight-warning:hover td
+{
+	background:#fbeed5!important;
+}
+
+.at-highlight-info
+{
+	background: #e1f5ff;
+	color: #3a87ad;
+}
+
+.at-highlight-info:hover, .at-highlight-info:hover td
+{
+	background: #bce8f1!important;
+}
+
+.at-highlight-success
+{
+	background: #dff0d8;
+	color: #468847;
+}
+
+.at-highlight-success:hover, .at-highlight-success:hover td
+{
+	background: #d6e9c6!important;
+}
+
+.at-align-left
+{
+	text-align:left;
+}
+.at-align-right
+{
+	text-align:right;
+}
+.at-align-center
+{
+	text-align:center;
+}

@@ -1,0 +1,81 @@
+.adash-element
+{
+	width: 20%;
+	max-width:130px;
+	float: left;
+	min-height: 130px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	padding-top: 5px;
+}
+
+.adash-image
+{
+	max-width:64px;
+	min-height: 1px;
+	margin-left: 15px;
+	margin-right: 15px;
+	position: relative;
+	border: 0 none;
+}
+
+.adash-title
+{
+	width: 100%;
+	text-align: center;
+}
+
+.adash-element:hover
+{
+	background-color:#eeeeee;
+}
+
+.adash-element a
+{
+	text-decoration:none;
+}
+
+.adash-badge {
+	position:absolute;
+	top: 3px;
+	right: 3px;
+	background-color: #999999;
+	border-radius: 10px;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1;
+	min-width: 10px;
+	padding: 3px 7px;
+	text-align: center;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+.adash-badge-alert
+{
+	color: #ffffff;
+	background-color: #d9534f;
+}
+
+.adash-badge-info
+{
+	color: #ffffff;
+	background-color: #5bc0de;
+}
+
+.adash-badge-warning
+{
+	color: #ffffff;
+	background-color: #f0ad4e;
+}
+
+.adash-badge-success
+{
+	color: #ffffff;
+	background-color: #5cb85c;
+}

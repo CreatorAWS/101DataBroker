@@ -1,0 +1,57 @@
+.categoriest-list-section ul li{
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.categoriest-list-section ul:before{
+    content: "";
+    display: table;
+    position: absolute;
+    width: 1px;
+    right: -0px;
+    top:-0px;
+    height: 100%;
+    background: #ccc;
+}
+.categoriest-list-section ul li.active a span,
+.categoriest-list-section ul li a:hover span{
+    background: #1A4159;
+}
+.categoriest-list-section ul li a:hover{
+    text-decoration: none;
+    color: #1A4159;
+}
+
+.categoriest-list-section ul{
+    list-style: none;
+}
+.categoriest-list-section .wrp{
+    position: relative;
+}
+.categoriest-list-section{
+    min-width: 300px;
+}
+.categoriest-list-section ul{
+    padding: 0;
+}
+.categoriest-list-section ul li a span{
+    background: #848c94;
+    padding: 2px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 11px;
+    min-width: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+    float: right;
+}
+.categoriest-list-section ul li.active a{
+    color: #1A4159;
+}
+.categoriest-list-section ul li a{
+    display: table;
+    width: 100%;
+    padding: 10px 15px 10px 10px;
+    color: #848c94;
+}

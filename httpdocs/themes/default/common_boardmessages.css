@@ -1,0 +1,93 @@
+.boardmessages-row-simple
+	{
+		border: 1px dotted #999999;
+		margin-top:5px;
+	}
+
+.boardmessages-row-header-number-simple
+	{
+		display:inline-block;
+		float:right;
+	}
+
+.boardmessages-row-signature
+	{
+		border-top: 1px dashed #aaaaaa;
+	}
+
+.boardmessages-row-message
+	{
+		border-left: 1px dashed #aaaaaa;
+	}
+
+.boardmessages-row-header-datetime-simple
+	{
+		font-style:italic;
+		margin-left:20px;
+		font-weight:normal;
+	}
+	
+.boardmessages-row-header-simple
+	{
+		font-weight:bold;
+		border-bottom:1px dashed #ccc;
+		padding:3px;
+	}
+
+/*---------------------------------------------------------*/
+	
+.boardmessages-row-header-first
+	{
+		background:#F8F8F8;
+	}
+
+.boardmessages-row-message-forum
+	{
+		margin-left:150px;
+		border-left: 1px dashed #aaaaaa;
+		padding:3px;
+	}
+
+.boardmessages-row-infopanel
+	{
+		width:150px;
+		float:left;
+		display:block;
+		clear:both;
+	    position: relative;
+	}
+
+.boardmessages-row-infopanel_sender
+	{
+		font-weight:bold;
+		padding-left:3px;
+	}
+
+.boardmessages-row-forum
+	{
+		border: 1px solid #ccc;
+		margin-top:5px;
+	}
+
+.boardmessages-row-header-number-forum
+	{
+		display:block;
+		float:right;
+	}
+
+.boardmessages-row-header-forum
+	{
+		border-bottom: 1px dashed #ccc;
+	}
+
+.boardmessages-row-status
+	{
+		text-decoration:underline;
+		font-weight:normal;
+		padding-left:3px;
+	}
+
+.boardmessages-row-infopanel-item
+	{
+		padding-left:3px;
+	}	

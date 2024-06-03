@@ -1,0 +1,80 @@
+.categorysection .wrp .fields .ab-button a:hover{
+    text-decoration: none;
+}
+.categorysection .wrp .fields .ab-button{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.categorysection .wrp .fields{
+    display: table;
+    width: 100%;
+}
+.categorysection .wrp{
+    display: table;
+    width: 100%;
+    margin: 20px 0 20px;
+}
+.categorysection .wrp .ab-button a{
+    color:#949ba2;
+}
+.categorysection .wrp .ab-button:hover{
+    background: #ddd;
+    border-color: #ccc;
+}
+.categorysection .wrp .ab-button:hover div,
+.categorysection .wrp .ab-button:hover a,
+.categorysection .wrp .ab-button a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.categorysection .wrp .addbtn{
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.categorysection .wrp .managelinks a{
+    padding-right: 5px;
+}
+.categorysection .wrp .managelinks{
+    float: left;
+    display: table;
+    padding-top: 12px;
+    margin-left: 4px;
+}
+.categorysection .wrp .title h3{
+    margin-right: 5px;
+}
+.categorysection .wrp .title{
+    display: table;
+    float: left;
+}
+.enabled_disabled{
+    display: table;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.buttons_wrp{
+    margin-bottom: 10px;
+    display: table;
+}
+.edit_delete:hover{
+    background: transparent!important;
+}
+.edit_delete{
+    border:0px;
+    padding: 0px;
+    position: relative;
+    top:-5px;
+    background: transparent;
+}
+.deletebutton{
+    margin-right: 10px;
+}
+.button-title{
+    float: left;
+}
+.template_fields{
+    margin-top: 15px;
+}

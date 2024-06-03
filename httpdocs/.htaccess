@@ -1,0 +1,46 @@
+<IfModule mod_php5.c>
+php_flag	magic_quotes_gpc		Off
+</IfModule>
+
+RewriteEngine On
+#RewriteCond %{HTTPS} !on
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^$ index.php [L]
+
+RewriteRule index\.php - [L]
+RewriteRule ^themes/.* - [L]
+RewriteRule ^files/.* - [L]
+RewriteRule ^ext/.* - [L]
+RewriteRule ^install/.* - [L]
+RewriteRule ^cli\.php.* index.php?m=404 [L]
+
+RewriteRule ^rewrite\.php.* - [L]
+
+RewriteRule ^news/([0-9][0-9][0-9][0-9])/([0-9]+)/([0-9]+)/$ index.php?m=news&d=listdate&dy=$1&dm=$2&dd=$3 [L]
+RewriteRule ^news/([0-9][0-9][0-9][0-9])/([0-9]+)/([0-9]+)/([0-9]+)\.html$ index.php?m=news&d=view&nid=$4 [L]
+RewriteRule ^news/([0-9]+)\.html$ index.php?m=news&d=view&nid=$1 [L]
+RewriteRule ^content/([0-9]+)\.html$ index.php?m=content&d=view&cid=$1 [L]
+RewriteRule ^downloads/attachments/([0-9]+)-(.*)$ index.php?m=download&d=attachment&id=$1 [L]
+RewriteRule ^downloads/viewattachment/([0-9]+)-(.*)$ index.php?m=download&d=showattachedfile&id=$1 [L]
+RewriteRule ^downloads/$ index.php?m=download [L]
+
+RewriteRule ^ccnv([0-9]+)$ index.php?m=customerdetails&d=conversation&id=$1 [L]
+RewriteRule ^vu/(.*)$ index.php?m=videouploadlogin&token=$1 [L]
+RewriteRule ^flo([0-9]+)$ index.php?m=companyassets&d=twiliomms&id=$1 [L]
+RewriteRule ^tos/$ index.php?m=tos&d=tos [L]
+RewriteRule ^privacy/$ index.php?m=tos&d=policy [L]
+
+RewriteRule ^plan-([0-9]+)$ index.php?m=subscription&d=view&id=$1 [L]
+RewriteRule ^plan-([0-9]+)/coupon-([0-9]+)$ index.php?m=subscription&d=view&id=$1&discount=$2 [L]
+RewriteRule ^plan-([0-9]+)/coupon-([0-9]+)/member([0-9]+)/([a-z])/$ index.php?m=subscription&d=view&id=$1&discount=$2&employee=$3&platform=$3 [L]
+RewriteRule ^stripewebhook-([0-9]+)$ index.php?m=stripewebhook&company=$1 [L]
+
+RewriteRule ^product-([0-9]+)$ index.php?m=product&d=view&id=$1 [L]
+RewriteRule ^product-([0-9]+)/coupon-([0-9]+)$ index.php?m=product&d=view&id=$1&discount=$2 [L]
+RewriteRule ^product-([0-9]+)/coupon-([0-9]+)/member([0-9]+)/([a-z])/$ index.php?m=product&d=view&id=$1&discount=$2&employee=$3&platform=$4 [L]
+RewriteRule ^product-([0-9]+)/member([0-9]+)/([a-z])/$ index.php?m=product&d=view&id=$1&employee=$2&platform=$3 [L]
+RewriteRule ^product-([0-9]+)/member([0-9]+)/$ index.php?m=product&d=view&id=$1&employee=$2 [L]
+
+RewriteRule (.*) rewrite.php?rewrittenquery=$1 [QSA,L]

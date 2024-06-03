@@ -1,0 +1,253 @@
+.rd-dash-conversation-time-short
+{
+    padding-left:60px;
+}
+
+.rd-dash-sidebar{
+    display: table-cell;
+
+    padding:0px;
+    margin-top:10px;
+    position: relative;
+    font-family: Lato,sans-serif;
+}
+.rd-dash-sidebar-item:hover{
+    background: #4596f1;
+    color:#fff;
+}
+.rd-dash-sidebar-item:first-child{
+    border-top: 0px solid #d7d7d7;
+}
+.rd-dash-sidebar-item
+{
+    padding: 10px 15px;
+    border:0px solid #000000;
+    cursor:pointer;
+    color:#000;
+    border-bottom: 1px dashed #ddd;
+}
+
+.rd-dash-sidebar-active:first-child{
+    border-top:0px solid #000000;
+}
+.rd-dash-sidebar-active
+{
+    color: #fff!important;
+    position: relative;
+
+    z-index: 9999;
+    background: #4596f1;
+    font-weight: bold;
+    font-family: Lato,sans-serif;
+    border-bottom: 0px solid #d7d7d7
+}
+
+.rd-dash-conversation
+{
+    display: table-cell;
+    background: #fff;
+    min-height: 700px;
+    padding-top: 20px;
+    border-right:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.dash-sidebar-unread .rd-dash-sidebar-item-details{
+    padding-left:20px;
+    background: url(images/newmessage.png) no-repeat left center;
+
+}
+.dash-sidebar-unread
+{
+
+}
+
+.rd-dash-conversation-item
+{
+    border:0px solid #d9edf7;
+    min-width:40%;
+    padding:20px;
+    padding-top:0px;
+    padding-bottom:5px;
+    border-radius: 3px;
+    color: #555555;
+    font-size: 16px;
+    margin-bottom:20px;
+    background: #fff;
+}
+
+.rd-dash-conversation-employee .rd-dash-conversation-item-footer{
+    background: #fff;
+}
+.rd-dash-conversation-employee
+{
+    float:right;
+    max-width: 65%;
+    border:0px solid #428bca;
+    border-radius: 5px!important;
+}
+
+.rd-dash-conversation-customer
+{
+    float:left;
+    max-width: 50%;
+    margin-left:20px;
+    border-radius: 5px!important;
+}
+
+.rd-dash-conversation-item-details span{
+    color: #1fa2ed;
+    font-weight: normal;
+}
+
+.rd-dash-conversation-employee .rd-dash-conversation-item-details span{
+    color: #1fa2ed;
+    font-weight: normal;
+}
+
+.rd-dash-conversation-item-details
+{
+    display: table;
+    float: left;
+}
+.rd-dash-conversation-item-footer{
+    background:#fff;
+    margin-bottom:0px;
+    margin-top:0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 5px 20px;
+    color: #000;
+    font-size: 13px;
+    display: table;
+    font-weight: bold;
+    font-size: 15px;
+}
+.rd-dash-conversation-employee .rd-dash-conversation-item-footer{
+    color:#000;
+}
+.dash-conversation-unread
+{
+    background:#fef4d1;
+}
+
+.dash-conversation-divider
+{
+    margin:3px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+hr{
+    margin-top:0px;
+}
+.mainblock .col-md-12 .row{
+    background: url(images/sidebarbg.jpg) repeat-y;
+}
+.mainblock .col-md-12 .row .col-md-9 .row{
+    background: #fff;
+}
+.rd-dash-sidebar{
+    background: #f0f0f0;
+    padding:10px;
+    margin-right:15px;
+}
+.rd-dash-sidebar-load{
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+}
+.rd-dash-sidebar-load a{
+    margin: 0px auto;
+    background-color: #428bca;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff !important;
+    font-weight: bold;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-family: Lato,sans-serif;
+    display: table;
+    width: 100%;
+    border: 1px solid #357ebd;
+}
+.rd-dash-sidebar-load a:hover{
+    text-decoration: none;
+    background: #3071a9;
+}
+.rd-dash-conversation-answer button{
+
+    text-transform: uppercase;
+    border-radius: 5px;
+/*    color: #fff !important;*/
+    font-weight: bold;
+    padding: 10px 20px;
+    display: table;
+    font-family: Lato,sans-serif;
+    float: right;
+}
+.rd-dash-conversation-answer{
+    width:100%;
+    margin: 0px auto;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    display: table;
+}
+
+#dashboard-conversation-text{
+    width:100%;
+    min-height: 150px;
+    border: 0px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.rd-dash-conversation-time{
+    color: #555555;
+    text-align: right;
+    font-size: 13px;
+    background: #65738f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px!important;
+}
+.rd-dash-conversation-employee .rd-dash-conversation-time{
+    color: #000;
+}
+.dash-conversation-timeline{
+    float: left;
+}
+.timeline{
+    background: url(images/timelinebg.png) repeat-y;
+    padding-bottom: 20px;
+}
+.timeline:last-child{
+    background: none;
+}
+.phone_call_section .phone_icon svg{
+    float: left;
+    max-width: 20px;
+    margin-right: 5px;
+}
+.phone_call_section .phone_icon{
+}
+.phone_call_section .call_icon{
+    width: 40px;
+    height: 40px;
+    background: rgba(209, 250, 229, 1);
+    padding: 10px;
+    color: rgba(5, 150, 105, 1);
+    margin: auto;
+    border-radius: 100px;
+}
+.phone_call_section{
+    display: table;
+    width: 100%;
+}
+.modal-content{
+    background: #fff!important;
+    padding: 20px!important;
+}

@@ -1,0 +1,1 @@
+{assign var=mod_name value=$modules[0].module}{assign var=index value=0}{include file="$mod_name.tpl"}

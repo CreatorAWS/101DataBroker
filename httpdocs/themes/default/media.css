@@ -1,0 +1,30 @@
+.gallery-item
+{
+	float:left;
+	min-width:100px;
+	padding:5px;
+	margin:1px;
+}
+
+.gallery-image-container
+{
+
+}
+
+.gallery-image
+{
+	
+}
+
+.gallery-title
+{
+	text-align:center;
+}
+
+.gallery-view-all-item
+{
+	clear:both;
+	text-align:center;
+	padding:5px;
+	margin: 2px 0 10px 0;
+}

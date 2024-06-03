@@ -1,0 +1,15 @@
+section.content{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.content .container-fluid{
+    padding: 0;
+}
+.block-content-outer{
+    border-left: 0;
+}
+.rd-dash-sidebar-item:hover{
+    background: transparent;
+}

@@ -1,0 +1,210 @@
+.dragable-header{
+
+    position: relative;
+    z-index: 99;
+    /* box-shadow: 0px 0px 3px 0px rgba(0,0,0,.1); */
+}
+.dragable-header .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+}
+.dragable-header .wrapper .headerstep{
+    width: 20%;
+    font-size: 16px;
+    /* text-align: center; */
+    cursor: default;
+    margin: 0px;
+    padding: 15px 0px 5px 10px;
+    min-width: 180px;
+    float: left;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#252525;
+    transition: background-color 0.2s ease;
+    font-weight: 500;
+}
+/* .leadcontainer > div:last-child {
+    margin-right: 10px;
+} */
+
+/* .dragable-header .wrapper .headerstep:after{
+    content:'';
+    position:absolute;
+    right:100%;
+    margin-right:-17px;
+    width:35px;
+    padding-top:35px;
+    border:solid #f6f7f7;
+    z-index:1;
+    transform:rotate(45deg);
+    border-bottom:0;
+    border-left:0;
+    top:5px;
+} */
+
+.dragable-header .wrapper .headerstep:first-child:after {
+    content: none;
+}
+.dragable-header .wrapper .headerstep:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: 0;
+}
+
+.leadcontainer {
+    display: table-cell;
+
+}
+
+.leadcontainer > div,
+.gu-mirror {
+    margin: 10px 20px 10px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease-in-out;
+}
+.leadcontainer > div {
+    cursor: grab;
+    background: #fff;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.showmoreleads a{
+    margin: auto;
+}
+.showmoreleads{
+    background: transparent!important;
+    box-shadow: none!important;
+    border: 0px solid!important;
+    display: flex;
+    padding: 0!important;
+}
+.gu-mirror {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.leadcontainer .ex-moved {
+
+}
+.leadcontainer.ex-over {
+
+}
+.leadcontainer > div{
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #EFEFF4;
+}
+.leadcontainer .note{
+    font-size: 14px;
+    color: #949BA2;
+    font-weight: 300;
+}
+.dropdown-userlist .btn{
+    padding: 0 5px;
+}
+.leadcontainer .cellphone{
+    font-size: 14px;
+    color: #949BA2;
+    word-wrap: anywhere;
+    font-weight: 300;
+}
+.leadcontainer .cellphone label > i, .leadcontainer .note label > i{
+    color: #949BA2;
+}
+.leadcontainer .name a{
+    color: #1A4159;
+}
+.leadcontainer .name{
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom:5px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.dragable-container .wrapper >div{
+    width: 20%;
+}
+.dragable-container .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+
+
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+.gu-hide {
+    display: none !important;
+}
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.gu-transit {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}
+
+.delete_edit_lead{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.location{
+    margin-bottom: 5px;
+    display: table;
+    margin-right: 5px;
+    float: left;
+}
+.locationwrap{
+    display: table;
+    width: 100%;
+}
+.leadcontainer label svg{
+    position: relative;
+    top:1px;
+}
+.dropdown-userlist > .dropdown-menu-compaign > a svg{
+    margin-right: 5px;
+}
+.dropdown-userlist > .dropdown-menu-compaign > a{
+    padding: 10px 15px;
+    font-weight: 400;
+    color: #6B7280;
+}
+.leadcontainer label{
+    font-weight: 300;
+    font-size: 13px;
+    color:#949BA2;
+    padding-right: 5px;
+}
+.nodatafound{
+    display: table;
+    width: 100%!important;
+    padding:50px;
+    text-align: center;
+}
+.dragable-container .label-info{
+    background: #99644C!important;
+}
+.offer_title{
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}

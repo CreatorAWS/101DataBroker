@@ -1,0 +1,31 @@
+table.adminform_table td textarea
+{
+	width:98%;
+}
+
+.adminform_savebutton
+{
+	text-align:right;
+}
+
+.adminform-row-odd
+{
+	background-color:#efefef;
+}
+
+.adminform-row-pair
+{
+	background-color:#fafafa;
+}
+
+tr.adminform-row-odd:hover td, tr.adminform-row-pair:hover td
+{
+	background-color:#e0e0e0;
+}
+
+.adminform_savebutton_helper
+{
+	font-style:italic;
+	padding-right:2em;
+	font-size:smaller;
+}

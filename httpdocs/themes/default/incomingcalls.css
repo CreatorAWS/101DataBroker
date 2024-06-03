@@ -1,0 +1,68 @@
+.incoming_call{
+    display: table;
+    margin: 20px auto;
+    width: 100%;
+}
+.incoming_call .buttons > div.decline a{
+    background: red;
+}
+.incoming_call .buttons > div.answer a{
+    background: #53d769;
+}
+.incoming_call .buttons > div a svg{
+    display: table;
+    margin: auto;
+}
+.incoming_call .buttons{
+    display: table;
+    margin: auto;
+    max-width: 400px;
+}
+
+.incoming_call .buttons > div a:hover{
+    color: #fff;
+}
+#caller_info{
+    margin: 0px auto 60px;
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+}
+#caller_info_name a{
+    color: rgba(79, 70, 229, 1);
+}
+#caller_info_name{
+    margin: 20px auto 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+}
+.incoming_call .buttons > div a{
+    margin: auto;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.incoming_call .buttons > div{
+    min-width: 200px;
+    align-items: center;
+    color: #fff;
+}
+.incoming_call .buttons{
+    display: flex;
+}
+#controls{
+    max-width: 220px;
+}
+#button-hangup{
+    background: #e61f4e;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    display: table;
+    border: 0px solid;
+}
